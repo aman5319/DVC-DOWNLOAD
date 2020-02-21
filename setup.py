@@ -29,7 +29,7 @@ setup(
             "Intended Audience :: Developers",
             "Intended Audience :: System Administrators",
             "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
-            "Programming Language :: Python :: 3 :: Only"
+            "Programming Language :: Python :: 3 :: Only",
             "Programming Language :: Python :: 3.5",
             "Programming Language :: Python :: 3.6",
             "Programming Language :: Python :: 3.7",
@@ -52,9 +52,10 @@ setup(
             dvcdownload=download:cli
         """,
 
-         project_urls={  isssaai
+         project_urls={ 
             'Bug Trackers': 'https://github.com/aman5319/DVC-DOWNLOAD/issues',
             'Source': "https://github.com/aman5319/DVC-DOWNLOAD",
             "Documentation" : "https://github.com/aman5319/DVC-DOWNLOAD/blob/master/README.md"
 
-    },
+        },
+    )
