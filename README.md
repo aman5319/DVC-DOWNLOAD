@@ -25,7 +25,7 @@ The user has to provide data to be pulled from the centralized repo in a CSV fil
 
 The CSV file should contain four columns 
 
-## file,output,git_url,password
+###  `file`,`output`,`git_url`,`password`
 file :- The file with full path in the centralized repo.
 output :- where to store the file in current directory.
 git_url :- The Git url of the DVC tracked file
@@ -72,7 +72,7 @@ By default the csv filename is file_info.csv if used same file name the --filena
 
 There are two sub commands
 
-1. same
+1. `same`
 
    ```bash
    # Sub command same help
@@ -100,7 +100,7 @@ There are two sub commands
 
    
 
-2. different 
+2. `different` 
 
    ```bash
    # sub command different help
