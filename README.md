@@ -43,7 +43,7 @@ Dependencies
 
 Install Expect in your system.
 
-For Ubuntu `sudo apt-get install expect` works.
+For Ubuntu `sudo apt-get install expect` 
 
 Installation
 ======
@@ -68,7 +68,7 @@ Commands:
 
 ```
 
-By default the csv filename is file_info.csv if used same file name the --filename option is not required.
+By default the CSV filename is `file_info.csv` if used same file name the `--filename` option is not required.
 
 There are two sub commands
 
@@ -114,7 +114,7 @@ There are two sub commands
    
    ```
 
-   Here if you want the script to take git_url and password from the csv file then use this. Here different git urls and their password can be used to fetch files from different repos into the current directory.
+   Here if you want the script to take git_url and password from the CSV file then use this. Here different git urls and their password can be used to fetch files from different repos into the current directory.
 
    ```bash
    # same (By default filename is file_info.csv) 
