@@ -21,7 +21,7 @@ Working
 
 There is only one python script which contains all the logic [download.py](./download.py).
 
-The user has to provide data to be pulled from the centralized repo in a CSV file. Using that CSV file the python generates an [Expect](https://core.tcl-lang.org/expect/index) script which is then executed.
+The user has to provide data to be pulled from the centralized repo in a CSV file stored in current project directory. Using that CSV file the python generates an [Expect](https://core.tcl-lang.org/expect/index) script which is then executed.
 
 The CSV file should contain four columns 
 
@@ -33,10 +33,10 @@ password :- For private repo password is needed
 
 ### sample.csv file
 
-| file                                                    | output                | git_url                            | password |
-| ------------------------------------------------------- | --------------------- | ---------------------------------- | -------- |
-| processed_data/Hindi/Hindi_Processed_15K_Sentiment.csv  | ./data/processed_data | https://aman5319@bitbucket.org/x/z | xyz      |
-| saved_outputs/Hindi/Hindi_SentencePiece_Tokenizer.model | .                     | https://aman5319@bitbucket.org/x/z | xyz      |
+| file                                                    | output                | git_url                                          | password |
+| ------------------------------------------------------- | --------------------- | ------------------------------------------------ | -------- |
+| processed_data/Hindi/Hindi_Processed_15K_Sentiment.csv  | ./data/processed_data | https://aman5319@bitbucket.org/aman5319/datasets | xyz      |
+| saved_outputs/Hindi/Hindi_SentencePiece_Tokenizer.model | .                     | https://aman5319@bitbucket.org/aman5319/datasets | xyz      |
 
 Dependencies
 ========
@@ -93,9 +93,9 @@ There are two sub commands
 
    ```bash
    # same (By default filename is file_info.csv) 
-   $ dvcdownload same --git_url=https://aman5319@bitbucket.org/x/z --password=xyz
+   $ dvcdownload same --git_url=https://aman5319@bitbucket.org/aman5319/datasets --password=xyz
    # same with another filename option
-   $ dvcdownload --filename=mycsv.csv same --git_url=https://aman5319@bitbucket.org/x/z --password=xyz
+   $ dvcdownload --filename=mycsv.csv same -- git_url=https://aman5319@bitbucket.org/aman5319/datasets --password=xyz
    ```
 
    
